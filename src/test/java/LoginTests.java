@@ -7,6 +7,11 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 
 public class LoginTests extends BaseTest {
+    //testing first push
+
+
+
+
     @Test
     public void loginEmptyEmailPassword() {
 
@@ -17,7 +22,7 @@ public class LoginTests extends BaseTest {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-        String url = "https://demo.koel.dev/012";
+        String url = "http://testkoel.skillup.study/";
         driver.get(url);
         Assert.assertEquals(driver.getCurrentUrl(), url);
         driver.quit();
